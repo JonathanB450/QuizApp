@@ -1,0 +1,100 @@
+#Home_Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../images/Background.jpg');
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#Home_Container:before{
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.2);
+}
+
+#Information{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+#Information h1{
+    margin-bottom: 10%;
+    font-size: 60px;
+}
+
+#Information p{
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+#Information h3{
+    margin-bottom: 7%;
+}
+
+#Information a{
+    text-decoration: none;
+    color: #000;
+}
+
+#Start_Button{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+#Start_Button p{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Start_Button:hover{
+    transition: all 0.5s;
+    background: rgb(88, 88, 88);
+}
+
+#Start_Button:hover p{
+    transition: all 0.5s;
+    color: #fff;
+}
+
+@media(max-width: 400px){
+    #Information h1{
+        font-size: 40px;
+    }
+
+    #Information p{
+        margin-bottom: 5%;
+        font-size: 18px;
+    }
+
+    #Start_Button{
+        margin-top: 10%;
+    }
+}
